@@ -20,7 +20,7 @@
         .border-t,
         .border-b{ position:relative;  }
         .border-t:before,
-        .border-b:after{     content: '';     position: absolute;     left: 0;  top:0;     background: #ddd;   right:0;    height: 1px;     -webkit-transform: scaleY(0.5);             transform: scaleY(0.5);     -webkit-transform-origin: 0 0;             transform-origin: 0 0; }
+        /*.border-b:after{ content: '';     position: absolute;     left: 0;  top:0;     background: #ddd;   right:0;    height: 1px;     -webkit-transform: scaleY(0.5);             transform: scaleY(0.5);     -webkit-transform-origin: 0 0;             transform-origin: 0 0; }*/
         .border-b:after{ top:auto; bottom:0;  }
 
         #wrap{ height: 100%; }
@@ -28,11 +28,11 @@
         #footer ul li{  padding-top: 36px; padding-bottom: 4px; background: url() no-repeat center 6px; background-size: auto 25px; text-align: center; }
         #footer ul li.active{ color: #1296db; }
         #footer ul li:nth-child(1){ background-image: url(./image/index/home.png); }
-        #footer ul li:nth-child(2){ background-image: url(./image/index/we.png); }
+        #footer ul li:nth-child(2){ background-image: url(./image/index/favor.png); }
         #footer ul li:nth-child(3){ background-image: url(./image/index/circle.png); }
         #footer ul li:nth-child(4){ background-image: url(./image/index/friend_add.png); }
         #footer ul li:nth-child(1).active{ background-image: url(./image/index/home_fill.png); }
-        #footer ul li:nth-child(2).active{ background-image: url(./image/index/we_fill.png); }
+        #footer ul li:nth-child(2).active{ background-image: url(./image/index/favor_fill.png); }
         #footer ul li:nth-child(3).active{ background-image: url(./image/index/circle_fill.png); }
         #footer ul li:nth-child(4).active{ background-image: url(./image/index/friend_add_fill.png); }
     </style>
@@ -70,7 +70,7 @@
         $api.fixStatusBar( $api.dom('header') );
         api.setStatusBarStyle({
             style: 'dark',
-            color: '#6ab494'
+            color: '#108ee9'
         });
         funIniGroup();
     }
