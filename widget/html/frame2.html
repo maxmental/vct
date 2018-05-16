@@ -3,14 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
     <title>开发</title>
     <link rel="stylesheet" type="text/css" href="../css/api.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <style>
-        .empty{ text-align: center; padding: 120px 0; }
+      #tab-content{background-color: #f1f1f1;}
+      #tabs{
+        padding: 10px 30px;
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack:justify;
+        -webkit-justify-content:space-between;
+        -ms-flex-pack:justify;
+        justify-content:space-between;
+      }
+      #tabs li{
+        width: 50%;
+        text-align: center;
+        background-color: #fff;
+      }
+      #tabs li:first-child{
+        border-top-left-radius:15px;
+        border-bottom-left-radius:15px;
+
+      }
+      #tabs li:last-child{
+        border-top-right-radius:15px;
+        border-bottom-right-radius:15px;
+      }
+
+      a{color: #333;}
+      #tabs li a{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+      }
+      #tabs li.current{
+        background-color: #108ee9;
+      }
+      .current a{ color:#fff; }
+      #content{background-color: #fff;}
+      .item{ display: none; }
+      .show{ display: block;}
     </style>
 </head>
 <body>
-    <div class="empty">3</div>
+    <div id="tab-content">
+      <ul id="tabs">
+        <li class="current"><a class = "car-sys" href="#" title="tab1">上海大众</a></li>
+        <li><a class = "car-sys" href="#" title="tab2">一汽大众</a></li>
+      </ul>
+
+      <div id="content">
+        <div id="tab1" class="item show">
+          111
+        </div>
+        <div id="tab2" class="item">
+          222
+        </div>
+      </div>
+    </div>
 </body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript">
+  apiready = function () {
+    $('#tabs a').click(function(e) {
+          e.preventDefault();
+          $('#tabs li').removeClass("current");
+          $(this).parent().addClass("current");
+          $("#content div").removeClass("show");
+          $('#' + $(this).attr('title')).addClass('show');
+      });
+  }
+</script>
 </html>

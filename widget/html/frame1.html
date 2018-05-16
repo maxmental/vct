@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
     <title>端API</title>
     <link rel="stylesheet" type="text/css" href="../css/api.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/aui/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
     <style>
-        .empty{ text-align: center; padding: 120px 0; }
+      .list{background-color: #fff;padding: 5px 0px;}
+      .title{padding-left: 15px;font-size: 0.8rem;color:#000;line-height: 1.8rem}
+      .gre{color: #33CC33;padding-left: 15px;line-height: 1.4rem;}
+      .rnum{
+        text-align: center;
+        color: #666;
+        font-size: .7rem;
+      }
+      .user-number{
+        color:#e91b27;
+        font-size: 0.9rem
+      }
     </style>
 </head>
 <body>
-    <div class="empty">2</div>
+    <div class="aui-content">
+      <div class="list border-bottom">
+        <p class="title">
+          <span>长沙东风标致全系特价团购会</span>
+          <!-- <span>推广已开启</span> -->
+        </p>
+        <div class="rnum aui-row">
+          <div class="aui-col-xs-3">
+            <p>今日新增</p>
+            <p><span class="user-number">23</span>人</p>
+          </div>
+          <div class="aui-col-xs-3">
+            <p>本周新增</p>
+            <p><span class="user-number">98</span>人</p>
+          </div>
+          <div class="aui-col-xs-3">
+            <p>本月新增</p>
+            <p><span class="user-number">323</span>人</p>
+          </div>
+          <div class="aui-col-xs-3">
+            <p>历史累计</p>
+            <p><span class="user-number">323</span>人</p>
+          </div>
+        </div>
+        <p class="gre ">推广已开启</p>
+      </div>
+    </div>
 </body>
 </html>

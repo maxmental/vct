@@ -16,7 +16,7 @@
   <preference name="pageBounce" value="false" /> <!--页面弹动-->
   <preference name="bounces" value="false" />
 	<preference name="smartUpdate" value="false"/>
-	<preference name="debug" value="false"/>
+	<preference name="debug" value="true"/>
 	<preference name="statusBarAppearance" value="false"/>
   <preference name="hScrollBarEnabled" value="false" />
   <preference name="vScrollBarEnabled" value="false" />
