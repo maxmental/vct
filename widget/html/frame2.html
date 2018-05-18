@@ -6,7 +6,10 @@
     <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
     <title>开发</title>
     <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/aui/aui.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+
     <style>
       #tab-content{background-color: #f1f1f1;}
       #tabs{
@@ -48,6 +51,22 @@
       #content{background-color: #fff;}
       .item{ display: none; }
       .show{ display: block;}
+
+      .car-frame{ padding: 10px 15px;}
+      .car-img img{ width: 100%;}
+      .car-cont{ padding-left: 10px;}
+      .title{ color: #333;font-weight: 700}
+      .aui-btn{ height: 1.2rem;line-height: 1.2rem;}
+      .no-build{ background-color: #00a8f1;color: #fff;}
+      .no-offer{ background-color: #e3524c;color: #fff;}
+      .no-build:active {
+      	background-color: #108ee9 ;
+        color: #e5e5e5;
+      }
+      .no-offer:active {
+      	background-color: #aa3d38 ;
+        color: #e5e5e5;
+      }
     </style>
 </head>
 <body>
@@ -58,11 +77,39 @@
       </ul>
 
       <div id="content">
+
         <div id="tab1" class="item show">
-          111
+          <div class="car-frame aui-row">
+              <div class="car-img aui-col-xs-4">
+                <img src="../image/sr.jpg" alt="">
+              </div>
+              <div class="car-cont aui-col-xs-8">
+                <p class="title aui-font-size-14">风行者</p>
+                <p class="price aui-font-size-12">官方指导价：7.59-14.69万 </p>
+                <p class="price aui-font-size-12">您的行情报价：3.79-14.69万</p>
+                <p>
+                  <span class="aui-btn aui-font-size-12 no-build">生成集客项目</span>
+                  <span class="aui-btn aui-font-size-12 no-offer">调整行情报价</span>
+                </p>
+              </div>
+          </div>
         </div>
+
         <div id="tab2" class="item">
-          222
+          <div class="car-frame aui-row">
+              <div class="car-img aui-col-xs-4">
+                <img src="../image/caee.jpg" alt="">
+              </div>
+              <div class="car-cont aui-col-xs-8">
+                <p class="title aui-font-size-14">LAONO</p>
+                <p class="price aui-font-size-12">官方指导价：9.4-13.56万 </p>
+                <p class="price aui-font-size-12">您的行情报价：7.5-21.25万</p>
+                <p>
+                  <span class="aui-btn aui-font-size-12 no-build">生成集客项目</span>
+                  <span class="aui-btn aui-font-size-12 no-offer">调整行情报价</span>
+                </p>
+              </div>
+          </div>
         </div>
       </div>
     </div>
